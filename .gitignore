@@ -16,11 +16,13 @@ typings/
 # Optional npm cache directory
 .npm
 yarn.lock
+package-lock.json
+.DS_Store
 
 # Optional eslint cache
 .eslintcache
 
 # removing build
-build/
+#build/
 
 
