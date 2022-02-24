@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import ControlledCarousel from './Carousel';
 import WorkInProgressPage from './WorkInProgressPage';
@@ -66,6 +66,7 @@ function App() {
 	const [open, setOpen] = React.useState(false);
 	const [showMenu, setMenu] = React.useState('hide');
 	const containerRef = React.createRef();
+	const [activeTab, setActiveTab] = useState('home');
 
 	useEffect(() => {
 		bindScrollSnap();
@@ -202,10 +203,16 @@ function App() {
 		);
 	}
 
+	const scollHandler = (tab) => {};
+
+	const tabClickHandler = (tab) => {
+		setActiveTab(tab);
+		// scollHandler(tab);
+	};
 	return (
 		<div className="App Rive" ref={containerRef}>
 			{/* <WorkInProgressPage/> */}
-			<ControlledCarousel />
+			<ControlledCarousel activeTab={activeTab} tabClickHandler={tabClickHandler} />
 			{/* {showMenu && (
 				<>
 					<button
@@ -330,7 +337,7 @@ function App() {
 			<Row id="menu" style={{ background: '#000', paddingTop: '125px' }} className="formRegister">
 				<div style={{ width: '12%' }}>
 					<Col xs={12} lg={4}>
-						<NavigationBar defaultActiveKey={'menu'} />
+						<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} scollHandler={scollHandler} />
 					</Col>
 				</div>
 				<Col xs={12} lg={5}>
@@ -360,7 +367,7 @@ function App() {
 			<Row id="reservations" style={{ height: '100vh' }} className="desktopView">
 				<Col xs={12} lg={4} style={{ backgroundImage: `url(${section1})`, opacity: '0.9', dislay: 'flex', alignItems: 'end' }}>
 					<Col xs={12} lg={4}>
-						<NavigationBar defaultActiveKey={'reservations'} />
+						<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} defaultActiveKey={'reservations'} />
 					</Col>
 					<div
 						style={{
@@ -428,7 +435,7 @@ function App() {
 			<Row id="aboutus" style={{ backgroundImage: `url(${chefImage})`, opacity: '0.9', height: '100vh' }} className="desktopView">
 				<Col xs={12} lg={6}>
 					<Col xs={12} lg={3}>
-						<NavigationBar defaultActiveKey={'aboutus'} />
+						<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} defaultActiveKey={'aboutus'} />
 					</Col>
 				</Col>
 

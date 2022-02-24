@@ -1,17 +1,37 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 
-function NavigationBar({ classNames, style, defaultActiveKey = '' }) {
-	React.useEffect(() => {
-		console.log('rendered with : ' + defaultActiveKey);
-		return () => {
-			console.log('rendered out : ' + defaultActiveKey);
-		};
-	});
+const navigations = [
+	{
+		tabkey: 'home',
+		displayName: 'HOME',
+	},
+	{
+		tabkey: 'menu',
+		displayName: 'menu',
+	},
+	{
+		tabkey: 'reservations',
+		displayName: 'RESERVATIONS',
+	},
+	{
+		tabkey: 'aboutus',
+		displayName: 'ABOUT US',
+	},
+	{
+		tabkey: 'career',
+		displayName: 'CAREERS',
+	},
+	{
+		tabkey: 'contactus',
+		displayName: 'CONTACT US',
+	},
+];
+function NavigationBar({ style, activeTab, tabClickHandler }) {
 	return (
-		<Nav
-			className={`flex-sm-column ${classNames}`}
+		<ul
+			className={`flex-sm-column navigation`}
 			style={
 				({
 					position: 'absolute',
@@ -23,29 +43,14 @@ function NavigationBar({ classNames, style, defaultActiveKey = '' }) {
 				style)
 			}
 		>
-			<Nav.Link href="#home" eventKey="home" style={{ borderBottom: '1px dashed #C8B568', fontSize: '20px', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}>
-				HOME
-			</Nav.Link>
-			<Nav.Link href="#menu" eventKey="menu" style={{ fontSize: '20px', borderBottom: '1px dashed #C8B568', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}>
-				MENU
-			</Nav.Link>
-			<Nav.Link
-				href="#reservations"
-				eventKey="reservations"
-				style={{ fontSize: '20px', borderBottom: '1px dashed #C8B568', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}
-			>
-				RESERVATIONS
-			</Nav.Link>
-			<Nav.Link href="#aboutus" eventKey="aboutus" style={{ fontSize: '20px', borderBottom: '1px dashed #C8B568', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}>
-				ABOUT US
-			</Nav.Link>
-			<Nav.Link href="#career" eventKey="career" style={{ fontSize: '20px', borderBottom: '1px dashed #C8B568', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}>
-				CAREERS
-			</Nav.Link>
-			<Nav.Link href="#contactus" eventKey="contactus" style={{ fontSize: '20px', borderBottom: '1px dashed #C8B568', paddingBottom: '2px', color: '#C8B568', fontFamily: 'Poppins, light' }}>
-				CONTACT US
-			</Nav.Link>
-		</Nav>
+			{navigations.map((item) => (
+				<li className={activeTab === item?.tabkey ? 'activetab' : ''} key={item?.tabkey}>
+					<a className="nostyle" href={`#${item?.tabkey}`} onClick={() => tabClickHandler(item?.tabkey)}>
+						{item?.displayName}
+					</a>
+				</li>
+			))}
+		</ul>
 	);
 }
 

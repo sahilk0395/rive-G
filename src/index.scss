@@ -289,24 +289,33 @@ code {
   /* border: 1px solid #ced4da;
   border-radius: 0.25rem; */
 }
+.navigation{
+  list-style-type: none;
+  // background-color: #fff;
+  
 
-.nav-link.active {
-  color: #556b2f!important;
-  font-weight: 600!important;
-}
-.nav-link:hover {
-  color: #556b2f!important;
-  font-weight: 600!important;
-}
-
-.nav-link {
-  font-size: "20px";
-  font-family: "Poppins, light";
-  color: "#4E4D4D"!important;
-  padding-top: 1.75rem!important;
-  padding-left:0rem!important;
-  padding-right:0rem!important;
-
+  li{
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #C8B568;
+    font-size: 20px;
+    padding-bottom: 2px;
+    color: #C8B568;
+    font-family: "Poppins, light";
+    padding-top: 1.75rem!important;
+    padding-left:0rem!important;
+    padding-right:0rem!important;
+    width: fit-content;
+  }
+  li.activetab {
+    color: #556b2f!important;
+    font-weight: 600!important; 
+  }
+  li:hover {
+    color: #556b2f!important;
+    font-weight: 600!important;
+    font-family: "Poppins, light";
+  }
 }
 
 .lesson {
@@ -461,4 +470,16 @@ box-shadow: none!important;
 }
 .font40{
   font-size: 40px;
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
 }
