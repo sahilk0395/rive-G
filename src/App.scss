@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  // pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation{
+  list-style-type: none;
+  position: absolute;
+  left: 42px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Poppins, light";
+  
+
+  li{
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #C8B568;
+    font-size: 20px;
+    padding-bottom: 2px;
+    color: #C8B568;
+    font-family: "Poppins, light";
+    padding-top: 1.75rem!important;
+    padding-left:0rem!important;
+    padding-right:0rem!important;
+    width: fit-content;
+  }
+  li.activetab {
+    color: #556b2f!important;
+    font-weight: 600!important; 
+  }
+  li:hover {
+    color: #556b2f!important;
+    font-weight: 600!important;
+    font-family: "Poppins, light";
+  }
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.app-container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  background-color: #556b2f;
+  height: 100vh;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+#home{
+  max-height: 100vh;
+}
+
+// #page-5{
+//   display: none;
+// }
+
+// #menu,#home,#reservations,#aboutus{
+//   display: none;
+// }

@@ -134,12 +134,7 @@ code {
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-707070);
   }
-
-
-   
-  .desktopView{
-      display: block;
-  } 
+  
   .mobileView {
     display: none;
    } 
@@ -191,7 +186,7 @@ code {
         left: 16px;
       }
       .carousel-navbar, .formRegister{
-        display: none!important;
+        display: none !important;
       }
 
       .formRegister {
@@ -289,34 +284,6 @@ code {
   /* border: 1px solid #ced4da;
   border-radius: 0.25rem; */
 }
-.navigation{
-  list-style-type: none;
-  // background-color: #fff;
-  
-
-  li{
-    cursor: pointer;
-    text-transform: uppercase;
-    border-bottom: 1px dashed #C8B568;
-    font-size: 20px;
-    padding-bottom: 2px;
-    color: #C8B568;
-    font-family: "Poppins, light";
-    padding-top: 1.75rem!important;
-    padding-left:0rem!important;
-    padding-right:0rem!important;
-    width: fit-content;
-  }
-  li.activetab {
-    color: #556b2f!important;
-    font-weight: 600!important; 
-  }
-  li:hover {
-    color: #556b2f!important;
-    font-weight: 600!important;
-    font-family: "Poppins, light";
-  }
-}
 
 .lesson {
   margin: 20px
@@ -328,52 +295,6 @@ code {
     box-sizing: border-box
 }
 
-section {
-    margin: 20px auto;
-    width: 940px;
-    text-align: center;
-    font-weight: bold
-}
-
-.item {
-    width: 150px;
-    float: left;
-    background: #4D602A 0% 0% no-repeat padding-box;
-    height: 100vh;
-    line-height: 200px;
-    cursor: pointer;
-    border-right: 1px solid #FFF;
-    color:#C8B568;
-    font-size: 24px;
-    font-family: "Poppins";
-    font-weight: 600px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-}
-
-.info {
-    float: left;
-    background-color: #222B13;
-    height: 100vh;
-    width: 0;
-    display: none;
-    border:12px solid black;
-}
-.show {
-  display: block;
-  float: left;
-  background-color: #222B13;
-  height: calc(100vh);
-  width: calc(100vw - 431px);
-  border:2px solid black;
-  color: #f8f8f8;
-  font-family: "Poppins";
-  font-size: 26px;
-}
-.hide{
-  display: none;
-}
 .showBlock {
   display: block;
 }
@@ -470,16 +391,4 @@ box-shadow: none!important;
 }
 .font40{
   font-size: 40px;
-}
-
-a.nostyle:link {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
-}
-
-a.nostyle:visited {
-  text-decoration: inherit;
-  color: inherit;
-  cursor: auto;
 }

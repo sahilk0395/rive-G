@@ -1,0 +1,38 @@
+.contnr{
+    background-color: black;
+    height: 100vh;
+    .headers{
+        height: fit-content;
+        color: #C8B568;
+        padding-top: 77px;
+        padding-bottom: 91px;
+        .heading1{
+            height: 84px;
+            display: flex;
+            justify-content: center;
+            font: normal normal 300 60px/90px Poppins;
+        }
+        .heading2{
+            display: flex;
+            justify-content: center;
+            height: 56px;
+            font: normal normal 300 40px/60px Poppins;
+        }
+    }
+    .dish_container{
+        height: 370px;
+        background-color: #C8B568;
+    }
+    .footer{
+        padding-top: 77px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p{
+            width: 60%;
+            color: #C8B568;
+            font: normal normal normal 18px/27px Poppins;
+        }
+    }
+}

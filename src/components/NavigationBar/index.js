@@ -1,15 +1,15 @@
-import './App.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import './style.scss';
 import Nav from 'react-bootstrap/Nav';
 
-const navigations = [
+export const navigations = [
 	{
 		tabkey: 'home',
 		displayName: 'HOME',
 	},
 	{
 		tabkey: 'menu',
-		displayName: 'menu',
+		displayName: 'Menu',
 	},
 	{
 		tabkey: 'reservations',
@@ -28,21 +28,10 @@ const navigations = [
 		displayName: 'CONTACT US',
 	},
 ];
+
 function NavigationBar({ style, activeTab, tabClickHandler }) {
 	return (
-		<ul
-			className={`flex-sm-column navigation`}
-			style={
-				({
-					position: 'absolute',
-					left: '42px',
-					textAlign: 'left',
-					fontSize: '20px',
-					fontFamily: 'Poppins, light',
-				},
-				style)
-			}
-		>
+		<ul className={`flex-sm-column navigation`} style={style}>
 			{navigations.map((item) => (
 				<li className={activeTab === item?.tabkey ? 'activetab' : ''} key={item?.tabkey}>
 					<a className="nostyle" href={`#${item?.tabkey}`} onClick={() => tabClickHandler(item?.tabkey)}>

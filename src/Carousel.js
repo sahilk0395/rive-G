@@ -7,7 +7,7 @@ import mobileD1 from './Resources/mobileD1.png';
 import mobile9 from './Resources/mobile9.png';
 import mobileLogo from './Resources/mobilelogo.png';
 import { useState } from 'react';
-import NavigationBar from './NavigationBar';
+import NavigationBar from './components/NavigationBar/index';
 
 function ControlledCarousel({ activeTab, tabClickHandler }) {
 	const [index, setIndex] = useState(0);
@@ -17,7 +17,7 @@ function ControlledCarousel({ activeTab, tabClickHandler }) {
 	};
 
 	return (
-		<div className="carousel home" id="home">
+		<div className="carousel home">
 			{/* <Carousel activeIndex={index} onSelect={handleSelect} className="homePageCarousel">
         <Carousel.Item>
           <img
