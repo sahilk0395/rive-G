@@ -1,3 +1,6 @@
+$btn-size:                70px;
+$btn-arrowsize:           $btn-size / 4;
+
 .contnr{
     background-color: black;
     height: 100vh;
@@ -20,8 +23,85 @@
         }
     }
     .dish_container{
-        height: 370px;
-        background-color: #C8B568;
+        // background-color: #C8B568;
+        height: fit-content;
+        position: relative;
+        .dish_track{
+          height: fit-content;
+          overflow-x: scroll;
+          scroll-behavior: smooth;
+          display: flex;
+          flex-direction: row;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+        .dish_card{
+            width: 370px;
+            display: inline-block;
+            margin-right: 60px;
+
+            .image_wrapper{
+                height: 370px;
+            }
+            .title{
+                font: normal normal 300 20px/30px Poppins;
+                color: #C8B568;
+                margin-top: 24px;
+                text-align: center;
+            }
+        }
+
+        .arrowbtn {
+            position: absolute;
+            width: $btn-size;
+            height: $btn-size;
+            background: #111;
+            border: 2px solid #C8B568;
+            border-radius: $btn-size;
+            color: #C8B568;
+            cursor: pointer;
+            line-height: $btn-size;
+            transition: all 0.25s ease-in-out;
+            z-index: 1;
+            &:hover {
+              background: white;
+              border-color: white;
+              color: #111;
+            }
+            &:after {
+              position: absolute;
+              display: inline-block;
+              content: "";
+              width: $btn-arrowsize;
+              height: $btn-arrowsize;
+              top: 50%;
+              left: 35px;
+            }
+          }
+          
+          .arrowbtn-left {
+            top: 40%;
+            left: 10px;
+            &:after {
+              margin-left: -($btn-arrowsize * .5);
+              margin-top: -($btn-arrowsize * .5);
+              border-top: 2px solid;
+              border-left: 2px solid;
+              transform: rotateZ(-45deg);
+            }
+          }
+          .arrowbtn-right {
+            top: 40%;
+            right: 10px;
+            &:after {
+              margin-left: -($btn-arrowsize * .75);
+              margin-top: -($btn-arrowsize * .5);
+              border-bottom: 2px solid;
+              border-right: 2px solid;
+              transform: rotateZ(-45deg);
+            }
+          }
     }
     .footer{
         padding-top: 77px;

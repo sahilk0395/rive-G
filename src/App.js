@@ -81,6 +81,7 @@ function App() {
 		setOpen(false);
 		setMenu(true);
 	};
+
 	const blue = {
 		500: '#222b13',
 		600: '#C8B568',
@@ -121,6 +122,7 @@ function App() {
       cursor: not-allowed;
     }
   `;
+
 	function CustomButton(props) {
 		return <ButtonUnstyled {...props} component={CustomButtonRoot} />;
 	}
@@ -154,11 +156,8 @@ function App() {
 		);
 	}
 
-	const scollHandler = (tab) => {};
-
 	const tabClickHandler = (tab) => {
 		setActiveTab(tab);
-		// scollHandler(tab);
 	};
 
 	const mobileContent = () => {
@@ -242,7 +241,6 @@ function App() {
 
 	return (
 		<div className="app-container" ref={containerRef}>
-			<DishPage />
 			{/* <WorkInProgressPage/> */}
 			<Row id="home">
 				<ControlledCarousel activeTab={activeTab} tabClickHandler={tabClickHandler} />
@@ -252,7 +250,13 @@ function App() {
 							<InputLabel size="small" id="demo-simple-select-label">
 								No of people
 							</InputLabel>
-							<Select labelId="demo-simple-select-label" id="demo-simple-select" value={1} size="small" label="No of people">
+							<Select
+								labelId="demo-simple-select-label"
+								id="demo-simple-select"
+								value={1}
+								size="small"
+								label="No of people"
+							>
 								<MenuItem value={1}>1 Person</MenuItem>
 								<MenuItem value={2}>2 Person</MenuItem>
 								<MenuItem value={3}>3 Person</MenuItem>
@@ -282,11 +286,17 @@ function App() {
 					</Col>
 					<Col xs={12} lg={3}>
 						<TextField type="text" size="small" className="form-control" label="Enter Your Email Id" />
-						<i className="fa fa-envelope icon" style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}></i>
+						<i
+							className="fa fa-envelope icon"
+							style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
+						></i>
 					</Col>
 					<Col xs={12} lg={2}>
 						<TextField type="text" size="small" className="form-control" label="Enter Your Contact Number" />
-						<i className="fa fa-phone icon" style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}></i>
+						<i
+							className="fa fa-phone icon"
+							style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
+						></i>
 					</Col>
 
 					<Col xs={12} lg={2}>
@@ -329,8 +339,9 @@ function App() {
 				<div style={{ padding: '20px' }}>
 					<p className="poppinsFamily heavyBold font24">Reserve Your Table</p>
 					<span className="font14 poppinsFamily semiBold" style={{ color: '#1A1A1A', fontWeight: 400 }}>
-						Please note that all reservations are for a full dining experience only. Tables for drinks however, are available on a walk-in basis. If you are unable find the time or date
-						you require, please feel free to call us.
+						Please note that all reservations are for a full dining experience only. Tables for drinks however, are
+						available on a walk-in basis. If you are unable find the time or date you require, please feel free to
+						call us.
 					</span>
 					<br></br>
 					<br></br>
@@ -338,13 +349,25 @@ function App() {
 					<br></br>
 					<Row>
 						<Col xs={12}>
-							<TextField id="outlined-basic" className="form-control" size="small" label="Name" variant="outlined" />
+							<TextField
+								id="outlined-basic"
+								className="form-control"
+								size="small"
+								label="Name"
+								variant="outlined"
+							/>
 						</Col>
 						<br></br>
 						<br></br>
 						<br></br>
 						<Col xs={12}>
-							<TextField id="outlined-basic" className="form-control" size="small" label="Last Name" variant="outlined" />
+							<TextField
+								id="outlined-basic"
+								className="form-control"
+								size="small"
+								label="Last Name"
+								variant="outlined"
+							/>
 						</Col>
 						<br></br>
 						<br></br>
@@ -354,7 +377,13 @@ function App() {
 								<InputLabel size="small" id="demo-simple-select-label">
 									No of people
 								</InputLabel>
-								<Select labelId="demo-simple-select-label" id="demo-simple-select" value={1} size="small" label="No of people">
+								<Select
+									labelId="demo-simple-select-label"
+									id="demo-simple-select"
+									value={1}
+									size="small"
+									label="No of people"
+								>
 									<MenuItem value={1}>1 Person</MenuItem>
 									<MenuItem value={2}>2 Person</MenuItem>
 									<MenuItem value={3}>3 Person</MenuItem>
@@ -391,14 +420,20 @@ function App() {
 						<br></br>
 						<Col xs={12}>
 							<TextField type="text" size="small" className="form-control" label="Enter Your Email Id" />
-							<i className="fa fa-envelope icon" style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}></i>
+							<i
+								className="fa fa-envelope icon"
+								style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
+							></i>
 						</Col>
 						<br></br>
 						<br></br>
 						<br></br>
 						<Col xs={12}>
 							<TextField type="text" size="small" className="form-control" label="Enter Your Contact Number" />
-							<i className="fa fa-phone icon" style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}></i>
+							<i
+								className="fa fa-phone icon"
+								style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
+							></i>
 						</Col>
 						<br></br>
 						<br></br>
