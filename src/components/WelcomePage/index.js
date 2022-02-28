@@ -9,13 +9,13 @@ import NavigationBar from '../NavigationBar/index';
 function WelcomePage({ activeTab, tabClickHandler }) {
 	return (
 		<Row id="welcome" className="wel-container">
-			<div style={{ width: '12%' }}>
+			<div style={{ width: '14%' }}>
 				<Col xs={12} lg={4}>
 					<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} />
 				</Col>
 			</div>
 			<Col xs={12} lg={5}>
-				<Carousel className="homePageCarousel" fade controls="false" style={{ height: 'calc(100vh - 100px)' }}>
+				<Carousel className="homePageCarousel" fade controls="false" style={{ height: 'calc(100vh - 150px)' }}>
 					<Carousel.Item>
 						<img className="d-block w-100" src={Image_51} style={{ height: 'calc(100vh - 290px)' }} alt="First slide" />
 					</Carousel.Item>

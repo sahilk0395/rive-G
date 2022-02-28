@@ -10,7 +10,7 @@ import NavigationBar from '../NavigationBar/index';
 
 function ReservationPage({ activeTab, tabClickHandler }) {
 	return (
-		<Row id="reservations" style={{ height: '100vh' }} className="desktopView">
+		<Row id="reservations" style={{ height: '100vh' }} className="formRegister">
 			<Col xs={12} lg={4} style={{ backgroundImage: `url(${section1})`, opacity: '0.9', dislay: 'flex', alignItems: 'end' }}>
 				<Col xs={12} lg={4}>
 					<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} defaultActiveKey={'reservations'} />

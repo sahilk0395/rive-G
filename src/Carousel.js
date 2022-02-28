@@ -58,7 +58,7 @@ function ControlledCarousel({ activeTab, tabClickHandler }) {
 					left: '42px',
 					textAlign: 'left',
 					zIndex: '9999',
-					fontSize: '20px',
+					fontSize: '16px',
 					fontFamily: 'Poppins, light',
 				}}
 			/>
@@ -67,7 +67,7 @@ function ControlledCarousel({ activeTab, tabClickHandler }) {
 					<div id="slide1"></div>
 				</Carousel.Item>
 				<Carousel.Item>
-					<video autoPlay>
+					<video autoPlay muted>
 						<source src={videoSample} type="video/mp4" style={{ height: '100%' }}></source>
 						Sorry, your browser doesn't support videos.
 					</video>

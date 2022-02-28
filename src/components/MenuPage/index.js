@@ -9,7 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Row from 'react-bootstrap/Row';
-import Image_51 from '../../Resources/Image_51.png';
+import lunchMenu from '../../Resources/lunchMenu.png';
 
 function MenuPage({ activeTab, tabClickHandler }) {
 	const [expandedMeal, setExpandedMeal] = React.useState('lunch');
@@ -57,7 +57,7 @@ function MenuPage({ activeTab, tabClickHandler }) {
 					<span className="meal_heading">Lunch</span>
 				</div>
 				<div className={`info ${expandedMeal == 'lunch' ? 'show' : 'hide'}`}>
-					<img src={Image_51} alt="First slide" />
+					<img src={lunchMenu} alt="First slide" />
 					<TableContainer className="table">
 						<Table sx={{ minWidth: 650 }} aria-label="simple table">
 							<TableHead></TableHead>
@@ -104,7 +104,7 @@ function MenuPage({ activeTab, tabClickHandler }) {
 				<div className={`info ${expandedMeal == 'alcohol' ? 'show' : 'hide'}`}>
 					<Row>
 						<Col xs={12} lg={3} style={{ paddingRight: '0px' }}>
-							<img src={Image_51} style={{ height: '100vh' }} alt="First slide" />
+							<img src={lunchMenu} style={{ height: '100vh',width:'100%' }} alt="First slide" />
 						</Col>
 						<Col xs={12} lg={9} style={{ paddingLeft: '0px' }}>
 							<TableContainer component={Paper}>

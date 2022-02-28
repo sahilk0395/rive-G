@@ -9,6 +9,9 @@
         height: 100vh;
         display: flex;
     }
+    .css-13xy2my {
+        background-color: transparent!important;
+    }
     .item {
         width: 150px;
         // float: left;
@@ -33,12 +36,9 @@
         height: 100%;
         width: 0;
         display: none;
-        background-color: #222B13;
+        background-color: #222B13!important;
         width: calc(100vw - 431px);
-        // width:60%;
         border:2px solid black;
-        // border:12px solid black;
-
         color: #f8f8f8;
         font-family: "Poppins";
         font-size: 26px;

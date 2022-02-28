@@ -34,7 +34,7 @@ function NavigationBar({ style, activeTab, tabClickHandler }) {
 		<ul className={`flex-sm-column navigation`} style={style}>
 			{navigations.map((item) => (
 				<li className={activeTab === item?.tabkey ? 'activetab' : ''} key={item?.tabkey}>
-					<a className="nostyle" href={`#${item?.tabkey}`} onClick={() => tabClickHandler(item?.tabkey)}>
+					<a className="nostyle poppinsFamily font16" href={`#${item?.tabkey}`} onClick={() => tabClickHandler(item?.tabkey)}>
 						{item?.displayName}
 					</a>
 				</li>

@@ -244,7 +244,7 @@ function App() {
 			{/* <WorkInProgressPage/> */}
 			<Row id="home">
 				<ControlledCarousel activeTab={activeTab} tabClickHandler={tabClickHandler} />
-				<Row className="formRegister" style={{ alignItems: 'center', height: '10vh', justifyContent: 'space-around' }}>
+				<Row className="formRegister" style={{ alignItems: 'center', height: '10vh', justifyContent: 'space-around',background: '#fcfcfc',paddingLeft: '67px'}}>
 					<Col xs={12} lg={1}>
 						<FormControl fullWidth>
 							<InputLabel size="small" id="demo-simple-select-label">
@@ -255,8 +255,7 @@ function App() {
 								id="demo-simple-select"
 								value={1}
 								size="small"
-								label="No of people"
-							>
+								label="No of people">
 								<MenuItem value={1}>1 Person</MenuItem>
 								<MenuItem value={2}>2 Person</MenuItem>
 								<MenuItem value={3}>3 Person</MenuItem>
@@ -291,8 +290,8 @@ function App() {
 							style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
 						></i>
 					</Col>
-					<Col xs={12} lg={2}>
-						<TextField type="text" size="small" className="form-control" label="Enter Your Contact Number" />
+					<Col xs={12} lg={3}>
+						<TextField type="text" size="small" label="Enter Your Contact Number"className="form-control"  />
 						<i
 							className="fa fa-phone icon"
 							style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
@@ -304,6 +303,11 @@ function App() {
 					</Col>
 				</Row>
 			</Row>
+			<div class="sticky"> 
+					<span style={{letterSpacing: 0,color: "#F8F7F7",/* bottom: 0px; */fontSize: "28px",fontFamily: "Helvetica Neue, Regular"}}>
+						THIS SITE IS UNDER CONSTRUCTION
+					</span> 
+      			</div>
 			<WelcomePage />
 			<ReservationPage />
 			<AboutUs />
