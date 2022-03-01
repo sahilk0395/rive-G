@@ -18,15 +18,17 @@
         background-color: #4D602A;
         height: 100%;
         cursor: pointer;
-        border-right: 1px solid #FFF;
+        // border-right: 1px solid #FFF;
         color:#C8B568;
-        font-size: 24px;
-        font-family: "Poppins";
-        font-weight: 600px;
-        text-transform: uppercase;
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        span{
+            font: normal normal bold 24px/35px 'Poppins';
+            letter-spacing: 0px;
+            color: #C8B568;
+            text-transform: uppercase;
+        }
     }
     .meal_heading{
         transform: rotate(269deg)
@@ -38,19 +40,48 @@
         display: none;
         background-color: #222B13!important;
         width: calc(100vw - 431px);
-        border:2px solid black;
+        // border:2px solid black;
         color: #f8f8f8;
         font-family: "Poppins";
         font-size: 26px;
         overflow: hidden;
-        img{
+        .image_wrapr{
             height: 100%;
             width: 30%;
-        }
-        .table{
-            width: 70%;
             display: inline-block;
+            overflow: hidden;
         }
+        .menu_wrapr{
+            width: 70%;
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+            padding: 41px 112px;
+            // background: yellow;
+            .menu_header{
+                display: block;
+                // display: none;
+                font: normal normal 300 40px/60px Poppins;
+                letter-spacing: 0px;
+                color: #C8B568;
+                margin-bottom: 60px;
+            }
+            .table_wrap{
+                .table{
+                    overflow-x: unset !important;
+                }
+                .table th,.table td,td,tr {
+                    border: unset;
+                }
+                tr{
+                    border-bottom: 1px dashed #C8B568;
+                }
+                td{
+                    padding-left: 0;
+                }
+            }
+        }
+
     }
     .show {
         display: inline-block;

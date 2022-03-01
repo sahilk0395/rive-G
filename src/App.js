@@ -1,7 +1,7 @@
 import './App.scss';
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import ControlledCarousel from './Carousel';
+import ControlledCarousel from './components/Carousel/index';
 import WorkInProgressPage from './WorkInProgressPage';
 import Col from 'react-bootstrap/Col';
 import FormControl from '@mui/material/FormControl';
@@ -242,9 +242,19 @@ function App() {
 	return (
 		<div className="app-container" ref={containerRef}>
 			{/* <WorkInProgressPage/> */}
+			<MenuPage />
 			<Row id="home">
 				<ControlledCarousel activeTab={activeTab} tabClickHandler={tabClickHandler} />
-				<Row className="formRegister" style={{ alignItems: 'center', height: '10vh', justifyContent: 'space-around',background: '#fcfcfc',paddingLeft: '67px'}}>
+				<Row
+					className="formRegister"
+					style={{
+						alignItems: 'center',
+						height: '10vh',
+						justifyContent: 'space-around',
+						background: '#fcfcfc',
+						paddingLeft: '67px',
+					}}
+				>
 					<Col xs={12} lg={1}>
 						<FormControl fullWidth>
 							<InputLabel size="small" id="demo-simple-select-label">
@@ -255,7 +265,8 @@ function App() {
 								id="demo-simple-select"
 								value={1}
 								size="small"
-								label="No of people">
+								label="No of people"
+							>
 								<MenuItem value={1}>1 Person</MenuItem>
 								<MenuItem value={2}>2 Person</MenuItem>
 								<MenuItem value={3}>3 Person</MenuItem>
@@ -291,7 +302,7 @@ function App() {
 						></i>
 					</Col>
 					<Col xs={12} lg={3}>
-						<TextField type="text" size="small" label="Enter Your Contact Number"className="form-control"  />
+						<TextField type="text" size="small" label="Enter Your Contact Number" className="form-control" />
 						<i
 							className="fa fa-phone icon"
 							style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
@@ -303,11 +314,18 @@ function App() {
 					</Col>
 				</Row>
 			</Row>
-			<div class="sticky"> 
-					<span style={{letterSpacing: 0,color: "#F8F7F7",/* bottom: 0px; */fontSize: "28px",fontFamily: "Helvetica Neue, Regular"}}>
-						THIS SITE IS UNDER CONSTRUCTION
-					</span> 
-      			</div>
+			<div class="sticky">
+				<span
+					style={{
+						letterSpacing: 0,
+						color: '#F8F7F7',
+						/* bottom: 0px; */ fontSize: '28px',
+						fontFamily: 'Helvetica Neue, Regular',
+					}}
+				>
+					THIS SITE IS UNDER CONSTRUCTION
+				</span>
+			</div>
 			<WelcomePage />
 			<ReservationPage />
 			<AboutUs />

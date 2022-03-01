@@ -1,13 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Nav from 'react-bootstrap/Nav';
-import videoSample from './Resources/videoSample.mp4';
-import mobile5 from './Resources/mobile5.png';
-import mobile6 from './Resources/mobile6.png';
-import mobileD1 from './Resources/mobileD1.png';
-import mobile9 from './Resources/mobile9.png';
-import mobileLogo from './Resources/mobilelogo.png';
+import React from 'react';
+import './style.scss';
+import videoSample from '../../Resources/videoSample.mp4';
+import mobile5 from '../../Resources/mobile5.png';
+import mobile6 from '../../Resources/mobile6.png';
+import mobileD1 from '../../Resources/mobileD1.png';
+import mobile9 from '../../Resources/mobile9.png';
+import mobileLogo from '../../Resources/mobilelogo.png';
 import { useState } from 'react';
-import NavigationBar from './components/NavigationBar/index';
+import NavigationBar from '../NavigationBar/index';
 
 function ControlledCarousel({ activeTab, tabClickHandler }) {
 	const [index, setIndex] = useState(0);

@@ -100,10 +100,4 @@ function DishPage() {
 	);
 }
 
-{
-	/* <Button style={{ fontFamily: 'Poppins, Regular', fontSize: '14px', color: '#FFFCFC', fontWeight: '900', border: '1px solid #FFFCFC' }} variant="outlined">
-					Book Now
-				</Button> */
-}
-
 export default DishPage;
