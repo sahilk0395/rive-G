@@ -102,3 +102,19 @@ a.nostyle:visited {
 // #menu,#home,#reservations,#aboutus{
 //   display: none;
 // }
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #2B3618 ;
+  width: 100%;
+  right: 0!important;
+  z-index: 99999;
+  text-align: center;
+  span{
+    letter-spacing: 0;
+    color: #F8F7F7;
+    font-size: 28px;
+    font-family: 'Helvetica Neue, Regular';
+  }
+}

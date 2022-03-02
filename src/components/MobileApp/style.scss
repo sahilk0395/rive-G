@@ -1,0 +1,39 @@
+.mobileView{
+    background-color: #fff;
+    height: 100%;
+}
+
+.layer1{
+    z-Index: 3; 
+    height: 100%;
+    .heading{
+        display: flex;
+        justify-content: end;
+        .mobileNav_button {
+            color: #4D602A;
+            font-size: 30px;
+            i{
+                font-size: 30px;
+            }
+        }
+        // .hide li{
+        //     transition: all 0.1s ease-out!important;
+        //     opacity: 0;
+        //   }
+    }
+    .mobileCaption {
+        display: block!important;
+        position: absolute; 
+        width: 100%;
+        top: 123px;
+        justify-content:center;
+        z-Index:2;
+        font-family: Brigham;
+    }
+}
+
+.homePageCarousel .carousel-inner {
+    height:100vh;
+}
+
+

@@ -153,34 +153,22 @@ code {
     font-size: 20px;
     font-family: 'Poppins, light';
   }
-  div.sticky {
-    position: sticky;
-    top: 0;
-    background-color: #2B3618 ;
-    width: 100%;
-    right: 0!important;
-    z-index: 99999;
-    text-align: center;
-  }
+
 
   @media screen and (max-width: 767px) {   
       .desktopView{
-          display: none!important
+          display: none !important
       }
       .mobileView {
           display: block;
       } 
-      .homePageCarousel .carousel-inner {
-        height:100vh;
-      }
+
 
       .carousel{
         height: 100vh!important;
         width:100vw;
       }
-      .homePageCarousel .carousel-indicators{
-        display: none!important;
-      }
+
       #slide1{
         content: url(./Resources/mobile9.png);
         height: 100vh;
@@ -252,9 +240,6 @@ code {
     #slide3{
       content: url(./Resources/mobile6.png);
     }
-    .homePageCarousel .carousel-inner {
-      height:100vh;
-    }
 
     .carousel{
       height:calc(100vh - 90px);
@@ -263,13 +248,6 @@ code {
       display: block;
     }
     
-    .homePageCarousel {
-      height: calc(100vh - 90px);
-    }
-    
-    .homePageCarousel .carousel-inner {
-      height: calc(100vh - 90px);
-    }
     #homelogo{
       content: url(./Resources/mobile5.png);
       position: absolute;
@@ -278,13 +256,6 @@ code {
       top: 70px;
       left: 52px;
     }
-    .mobileReserveButton {
-      display: none;
-    }
-    .mobileCaption {
-      display: none;
-    }
-    
   }
   @media (min-width: 1200px) {    
     .desktopView{
@@ -311,17 +282,6 @@ code {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
-}
-
-.showBlock {
-  display: block;
-}
-.hide li{
-  transition: all 0.1s ease-out!important;
-  opacity: 0;
-}
-.showBlock ul li {
-  opacity: 1;
 }
 
 .MuiFormControl-root {
@@ -383,13 +343,7 @@ tbody, td, tfoot, th, thead, tr, .css-34nofg-MuiTableRow-root:last-child td, .cs
 .sideDashedBorder {
   border-right: 1px dashed #535252;
 }
-.mobileNav {
-  position: absolute; 
-  top: 3px; 
-  z-Index: 9999; 
-  right: 0;
-  color: #4D602A;
-}
+
 .heavyBold{
   font-weight: 900;
 }
