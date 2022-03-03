@@ -33,16 +33,11 @@ function MobileApp({ activeTab, tabClickHandler }) {
 		<div className="mobileView">
 			<div className="layer1">
 				<div className="heading">
-					<button className="navbar-toggler mobileNav_button" onClick={() => setShowMobileNav(!showMobileNav)}>
+					<div className="mobileNav_button" onClick={() => setShowMobileNav(!showMobileNav)}>
 						<i className="fas fa-bars"></i>
-					</button>
+					</div>
 					{showMobileNav && (
-						<div
-							className="navbar-collapse mobileView"
-							style={{ position: 'absolute', top: '60px', zIndex: '9999', width: '100%', color: '#4D602A' }}
-							className={showMobileNav}
-							id="navbarSupportedContent1"
-						>
+						<div className="navbar-container">
 							<ul className="navbar-nav mr-auto">
 								<li
 									className="nav-item active"
@@ -132,21 +127,16 @@ function MobileApp({ activeTab, tabClickHandler }) {
 						</div>
 					)}
 				</div>
-				<div className="mobileCaption">
-					<span className="logoColor font30 bold" style={{ fontFamily: 'Brigham, regular' }}>
-						A Finesse Blend of Taste & Luxury
-					</span>
+				<div className="caption_container">
+					<div className="caption">A Finesse Blend of Taste & Luxury</div>
 				</div>
 				<div className="mobileReserveButton">
-					<Col xs={12} lg={1}>
-						<CustomButton style={{ fontSize: '20px' }} onClick={() => {}}>
-							BOOK NOW
-						</CustomButton>
-						;
-					</Col>
+					<CustomButton style={{ fontSize: '20px' }} onClick={() => {}}>
+						BOOK NOW
+					</CustomButton>
 				</div>
 			</div>
-			{/* <Carousel className="homePageCarousel">
+			<Carousel className="homePageCarousel">
 				<Carousel.Item>
 					<div id="slide1"></div>
 				</Carousel.Item>
@@ -159,7 +149,7 @@ function MobileApp({ activeTab, tabClickHandler }) {
 				<Carousel.Item>
 					<div id="slide3"></div>
 				</Carousel.Item>
-			</Carousel> */}
+			</Carousel>
 			<RegisterForm />
 		</div>
 	);

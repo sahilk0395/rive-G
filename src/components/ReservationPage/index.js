@@ -10,8 +10,12 @@ import NavigationBar from '../NavigationBar/index';
 
 function ReservationPage({ activeTab, tabClickHandler }) {
 	return (
-		<Row id="reservations" style={{ height: '100vh' }} className="formRegister">
-			<Col xs={12} lg={4} style={{ backgroundImage: `url(${section1})`, opacity: '0.9', dislay: 'flex', alignItems: 'end' }}>
+		<Row id="reservations" style={{ height: '100vh' }}>
+			<Col
+				xs={12}
+				lg={4}
+				style={{ backgroundImage: `url(${section1})`, opacity: '0.9', dislay: 'flex', alignItems: 'end' }}
+			>
 				<Col xs={12} lg={4}>
 					<NavigationBar activeTab={activeTab} tabClickHandler={tabClickHandler} defaultActiveKey={'reservations'} />
 				</Col>
@@ -28,9 +32,22 @@ function ReservationPage({ activeTab, tabClickHandler }) {
 						top: '450px',
 					}}
 				>
-					<p style={{ fontFamily: 'Poppins, Regular', fontWeight: '800', fontSize: '30px', color: '#AE8018' }}>RESTAURANT SHOWCASE</p>
-					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<Button style={{ fontFamily: 'Poppins, Regular', fontSize: '14px', color: '#FFFCFC', fontWeight: '900', border: '1px solid #FFFCFC' }} variant="outlined">
+					<p style={{ fontFamily: 'Poppins, Regular', fontWeight: '800', fontSize: '30px', color: '#AE8018' }}>
+						RESTAURANT SHOWCASE
+					</p>
+					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+					</p>
+					<Button
+						style={{
+							fontFamily: 'Poppins, Regular',
+							fontSize: '14px',
+							color: '#FFFCFC',
+							fontWeight: '900',
+							border: '1px solid #FFFCFC',
+						}}
+						variant="outlined"
+					>
 						View More
 					</Button>
 				</div>
@@ -49,9 +66,22 @@ function ReservationPage({ activeTab, tabClickHandler }) {
 						justifyContent: 'end',
 					}}
 				>
-					<p style={{ fontFamily: 'Poppins, Regular', fontWeight: '800', fontSize: '30px', color: '#AE8018' }}>AMBIENCE LOUNGE</p>
-					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<Button style={{ fontFamily: 'Poppins, Regular', fontSize: '14px', color: '#FFFCFC', border: '1px solid #FFFCFC', fontWeight: '900' }} variant="outlined">
+					<p style={{ fontFamily: 'Poppins, Regular', fontWeight: '800', fontSize: '30px', color: '#AE8018' }}>
+						AMBIENCE LOUNGE
+					</p>
+					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+					</p>
+					<Button
+						style={{
+							fontFamily: 'Poppins, Regular',
+							fontSize: '14px',
+							color: '#FFFCFC',
+							border: '1px solid #FFFCFC',
+							fontWeight: '900',
+						}}
+						variant="outlined"
+					>
 						View More
 					</Button>
 				</div>
@@ -70,9 +100,22 @@ function ReservationPage({ activeTab, tabClickHandler }) {
 						justifyContent: 'end',
 					}}
 				>
-					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '30px', fontWeight: '800', color: '#AE8018' }}>SUMMER GAREDEN</p>
-					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-					<Button style={{ fontFamily: 'Poppins, Regular', fontSize: '14px', fontWeight: '900', color: '#FFFCFC', border: '1px solid #FFFCFC' }} variant="outlined">
+					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '30px', fontWeight: '800', color: '#AE8018' }}>
+						SUMMER GAREDEN
+					</p>
+					<p style={{ fontFamily: 'Poppins, Regular', fontSize: '18px', color: '#FFFCFC' }}>
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+					</p>
+					<Button
+						style={{
+							fontFamily: 'Poppins, Regular',
+							fontSize: '14px',
+							fontWeight: '900',
+							color: '#FFFCFC',
+							border: '1px solid #FFFCFC',
+						}}
+						variant="outlined"
+					>
 						View More
 					</Button>
 				</div>

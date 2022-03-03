@@ -80,7 +80,6 @@ function RegisterForm() {
 					style={{ color: 'darkgray', position: 'absolute', top: '12px', right: '25px' }}
 				></i>
 			</Col>
-
 			<Col xs={12} lg={2}>
 				<CustomButton>BOOK NOW</CustomButton>;
 			</Col>

@@ -6,34 +6,79 @@
 .layer1{
     z-Index: 3; 
     height: 100%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
     .heading{
         display: flex;
         justify-content: end;
         .mobileNav_button {
             color: #4D602A;
+            padding: 5px 10px;
             font-size: 30px;
             i{
                 font-size: 30px;
             }
         }
-        // .hide li{
-        //     transition: all 0.1s ease-out!important;
-        //     opacity: 0;
-        //   }
+        .navbar-container{
+            position: fixed;
+            top: 50px;
+            z-index: 4;
+            width: 100%;
+            color: rgb(77, 96, 42);
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            .nav-item{
+                background: rgb(149, 143, 118);
+                width: 100%;
+                left: 10px;
+                position: relative;
+            }
+            .nav-link{
+                font: normal normal 900 14px/20px Poppins;
+                color: #222B13;
+                position: relative;
+                left: 33px;
+                text-align: left;
+            }
+        }
     }
-    .mobileCaption {
-        display: block!important;
-        position: absolute; 
+    .caption_container {
         width: 100%;
         top: 123px;
         justify-content:center;
         z-Index:2;
         font-family: Brigham;
+        display: flex;
+        justify-content: center;
+        margin-top: 81px;
+        .caption{
+            width: 70%;
+            font-size: 30px;
+            font-weight: 900;
+            color: #C8B568;
+            text-align: center;
+        }
     }
+    .mobileReserveButton {
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        font-family: "Poppins, Medium";
+        font-weight: 900;
+        width: 100%;
+        justify-content: center;
+      }
 }
 
-.homePageCarousel .carousel-inner {
-    height:100vh;
+.homePageCarousel {
+    .carousel-inner {
+        height:100vh;
+    }
+    .carousel-control-prev,.carousel-control-next{
+        display: none;
+    }
 }
 
 

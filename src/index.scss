@@ -191,31 +191,10 @@ code {
         top: 20px!important;
         left: 16px;
       }
-      .carousel-navbar, .formRegister{
+      .carousel-navbar{
         display: none !important;
       }
-
-      .formRegister {
-        display: none !important;
-      }
-
-      .mobileReserveButton {
-        display: flex;
-        position: absolute;
-        bottom: 100px;
-        font-family: "Poppins, Medium";
-        font-weight: 900;
-        width: 100%;
-      }
-
-      .mobileCaption {
-        display: block!important;
-        position: absolute; 
-        width: 100%;
-        top: 123px;
-        justify-content:center;
-        z-Index:2;
-      }
+      
       .footer-copyright {
         top:50px!important;
       }
